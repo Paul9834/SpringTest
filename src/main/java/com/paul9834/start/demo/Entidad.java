@@ -2,20 +2,20 @@ package com.paul9834.start.demo;
 
 import javax.persistence.*;
 
-@Table(name = "Persona")
+@Table(name = "persona")
 public class Entidad {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "Nombre")
+    @Column(name = "nombre")
     private String name;
 
-    @Column(name = "Edad")
+    @Column(name = "edad")
     private int age;
 
-    @Column(name = "Email")
+    @Column(name = "email")
     private String email;
 
 
