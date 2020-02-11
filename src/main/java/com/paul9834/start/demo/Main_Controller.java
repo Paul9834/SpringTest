@@ -9,7 +9,7 @@ public class Main_Controller {
     @Autowired
     private Repositorio repositorio;
 
-    @PostMapping ("/add")
+    @PostMapping ("/")
     public String addPersona (
             @RequestParam String nombre,
             @RequestParam int edad,
@@ -17,16 +17,8 @@ public class Main_Controller {
             ) {
 
          repositorio.save(new Entidad(nombre,edad,email));
-
          return "Paul";
     }
-
-
-
-
-
-
-
 
 
 }
